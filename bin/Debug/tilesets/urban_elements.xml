@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tile resolution: 64x64 -->
+<set>
+  <tiles>
+    <tile name="road_1" symmetry="I"/>
+    <tile name="district_1" symmetry="\"/>
+    <tile name="edge_1" symmetry="X"/>
+    <tile name="landmark_1" symmetry="X"/>
+    <tile name="node_1" symmetry="X"/>
+    <tile name="node_2" symmetry="X"/>
+    <tile name="objects_1" symmetry="X"/>
+    <tile name="objects_2" symmetry="X"/>
+    <tile name="road_2" symmetry="I"/>
+    <tile name="road_3" symmetry="I"/>
+    <tile name="space_1" symmetry="X"/>
+    <tile name="user_1" symmetry="X"/>
+  </tiles>
+
+  <neighbors>
+    <!-- Existing neighbor rules -->
+    <neighbor left="road_1 1" right="road_1 3"/>
+    <neighbor left="road_1 1" right="district_1 3"/>
+    <neighbor left="district_1 0" right="road_1 2"/>
+    <!-- Additional neighbor rules can be added here -->
+  </neighbors>
+
+  <subsets>
+    <subset name="default">
+      <tile name="road_1"/>
+      <tile name="district_1"/>
+      <tile name="edge_1"/>
+      <tile name="landmark_1"/>
+      <tile name="node_1"/>
+      <tile name="node_2"/>
+      <tile name="objects_1"/>
+      <tile name="objects_2"/>
+      <tile name="road_2"/>
+      <tile name="road_3"/>
+      <tile name="space_1"/>
+      <tile name="user_1"/>
+    </subset>
+  </subsets>
+</set>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+	<tiles>
+		<tile name="road_1" symmetry="I"/>
+		<tile name="district_1" symmetry="\"/>
+	</tiles>
+
+	<neighbors>
+		<neighbor left="road_1 1" right="road_1 3"/>
+		<neighbor left="road_1 1" right="district_1 3"/>
+		<neighbor left="district_1 0" right="road_1 2"/>
+	</neighbors>
+
+	<subsets>
+		<subset name="default">
+			<tile name="road_1"/>
+			<tile name="district_1"/>
+		</subset>
+	</subsets>
+</set>

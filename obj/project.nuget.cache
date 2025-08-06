@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "dgSpecHash": "dTL0WpffsB8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\Source\\Repos\\CollectingCityscape\\WaveFunctionCollapse.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\sixlabors.imagesharp\\2.1.3\\sixlabors.imagesharp.2.1.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "套件 'SixLabors.ImageSharp' 2.1.3 具有已知的 高 嚴重性弱點，https://github.com/advisories/GHSA-2cmq-823j-5qj8。",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "套件 'SixLabors.ImageSharp' 2.1.3 具有已知的 中度 嚴重性弱點，https://github.com/advisories/GHSA-5x7m-6737-26cr。",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "套件 'SixLabors.ImageSharp' 2.1.3 具有已知的 高 嚴重性弱點，https://github.com/advisories/GHSA-63p8-c4ww-9cg7。",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "套件 'SixLabors.ImageSharp' 2.1.3 具有已知的 高 嚴重性弱點，https://github.com/advisories/GHSA-65x7-c272-7g7r。",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "套件 'SixLabors.ImageSharp' 2.1.3 具有已知的 中度 嚴重性弱點，https://github.com/advisories/GHSA-g85r-6x2q-45w7。",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "套件 'SixLabors.ImageSharp' 2.1.3 具有已知的 中度 嚴重性弱點，https://github.com/advisories/GHSA-qxrv-gp6x-rc23。",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "套件 'SixLabors.ImageSharp' 2.1.3 具有已知的 中度 嚴重性弱點，https://github.com/advisories/GHSA-rxmq-m78w-7wmc。",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

@@ -69,3 +69,60 @@ static class Program
         Console.WriteLine($"time = {sw.ElapsedMilliseconds}");
     }
 }
+//using System;
+//using System.IO;
+//using System.Linq;
+//using System.Xml.Linq;
+//using System.Diagnostics;
+
+//static class Program
+//{
+//    static void Main()
+//    {
+//        Stopwatch sw = Stopwatch.StartNew();
+//        var folder = Directory.CreateDirectory("output");
+//        foreach (var file in folder.GetFiles()) file.Delete();
+
+//        Random random = new();
+//        XDocument xdoc = XDocument.Load("samples.xml");
+
+//        foreach (XElement xelem in xdoc.Root.Elements("simpletiled"))
+//        {
+//            string name = xelem.Get<string>("name");
+//            Console.WriteLine($"< {name}");
+
+//            bool periodic = xelem.Get("periodic", false);
+//            string subset = xelem.Get<string>("subset");
+//            bool blackBackground = xelem.Get("blackBackground", false);
+//            int width = xelem.Get("width", xelem.Get("size", 24));
+//            int height = xelem.Get("height", xelem.Get("size", 24));
+//            string heuristicString = xelem.Get<string>("heuristic");
+//            var heuristic = heuristicString switch
+//            {
+//                "Scanline" => Model.Heuristic.Scanline,
+//                "MRV" => Model.Heuristic.MRV,
+//                _ => Model.Heuristic.Entropy
+//            };
+
+//            var model = new SimpleTiledModel(name, subset, width, height, periodic, blackBackground, heuristic);
+
+//            for (int k = 0; k < 10; k++)
+//            {
+//                Console.Write("> ");
+//                int seed = random.Next();
+//                bool success = model.Run(seed, xelem.Get("limit", -1));
+//                if (success)
+//                {
+//                    Console.WriteLine("DONE");
+//                    model.Save($"output/{name} {seed}.png");
+//                    if (model is SimpleTiledModel stmodel && xelem.Get("textOutput", false))
+//                        File.WriteAllText($"output/{name} {seed}.txt", stmodel.TextOutput());
+//                    break;
+//                }
+//                else Console.WriteLine("CONTRADICTION");
+//            }
+//        }
+
+//        Console.WriteLine($"time = {sw.ElapsedMilliseconds}ms");
+//    }
+//}
